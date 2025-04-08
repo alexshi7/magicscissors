@@ -113,8 +113,8 @@ public class HeapMinQueue<KeyType> implements MinQueue<KeyType> {
      */
     @Override
     public KeyType remove() {
-        // TODO A6.3c: Implement this method as specified
-        throw new UnsupportedOperationException();  // Replace this line
+     
+        throw new UnsupportedOperationException(); 
     }
 
     /**
@@ -135,7 +135,7 @@ public class HeapMinQueue<KeyType> implements MinQueue<KeyType> {
         assert i >= 0 && i < heap.size();
         assert j >= 0 && j < heap.size();
 
-        // TODO A6.3a: Implement this method as specified
+
     }
 
     /**
@@ -145,23 +145,16 @@ public class HeapMinQueue<KeyType> implements MinQueue<KeyType> {
     private void add(KeyType key, int priority) {
         assert !index.containsKey(key);
 
-        // TODO A6.3d: Implement this method as specified
+       
 
         assert checkInvariant();
     }
 
-    /**
-     * Change the priority associated with element `key` to `priority`.  Requires that `key` is
-     * contained in this queue.
      */
     private void update(KeyType key, int priority) {
         assert index.containsKey(key);
 
-        // TODO A6.3e: Implement this method as specified
 
         assert checkInvariant();
     }
 
-    // TODO A6.3b: Implement private helper methods for bubbling entries up and down in the heap.
-    //  Their interfaces are up to you, but you must write precise specifications.
-}
